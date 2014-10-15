@@ -22,9 +22,11 @@ CU_DEPS=$(SRCDIR)/instructions.h
 
 EXECUTABLE=main
 
-all: program
 
-#all: program diverge sync icache1 icache2 icache3 icache4 cmem global shared texture2 texture4 otherstuff
+
+all: program diverge sync icache1 icache2 icache3 icache4 cmem global shared texture2 texture4 otherstuff
+
+main: program
 
 # List of .ptx files to build from .cu files.
 PTX_OUTPUTS= # clock.ptx pipeline.ptx
