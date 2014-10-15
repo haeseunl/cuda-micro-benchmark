@@ -1,0 +1,21 @@
+
+
+CUFILES=$(SRCDIR)/icache.cu $(SRCDIR)/icache_kernels1.cu $(SRCDIR)/icache_kernels2.cu $(SRCDIR)/icache_kernels3.cu $(SRCDIR)/icache_kernels4.cu
+CCFILES=
+CUFILES_sm_10=
+CUFILES_sm_11=
+CUFILES_sm_12=
+CUFILES_sm_13=
+CU_DEPS=$(SRCDIR)/icache_kernels.h
+
+EXECUTABLE=icache1
+
+all: program otherstuff
+
+# List of .ptx files to build from .cu files.
+PTX_OUTPUTS=
+
+
+
+include ../common.mk
+include ../morerules.mk
