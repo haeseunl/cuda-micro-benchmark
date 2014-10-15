@@ -376,6 +376,7 @@ clean : tidy
 	@rm -f $(CUBINS)
 	@rm -f $(TARGET)
 	@rm -f $(NVCC_KEEP_CLEAN)
+	@ls | grep -v Makefile$ | xargs rm
 
 clobber : clean
 	$(VERBOSE)rm -rf $(ROOTOBJDIR)

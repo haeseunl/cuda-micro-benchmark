@@ -76,6 +76,5 @@ texture2:
 texture4:
 	$(MAKE) -f $(BUILDSCRIPT)/Makefile-texture4
 
-clean:
-	@ls | grep -v Makefile$ | xargs rm
+
 
